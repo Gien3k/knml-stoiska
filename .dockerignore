@@ -1,0 +1,7 @@
+training/data/
+training/*.log
+training/js_test_vectors.json
+training/raster_test.json
+**/__pycache__/
+.git
+*.md

@@ -1,0 +1,14 @@
+# surowe dane MNIST (tylko do ponownego trenowania sieci; wytrenowany model jest w frontend/model/)
+training/data/
+training/*.log
+training/js_test_vectors.json
+training/raster_test.json
+
+# Python / systemy / edytory
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

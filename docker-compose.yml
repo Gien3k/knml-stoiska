@@ -1,0 +1,16 @@
+services:
+  kiosk:
+    build: .
+    image: knml-kiosk:latest
+    container_name: knml-kiosk
+    ports:
+      - "8080:8000"
+    volumes:
+      # Podmiana logotypów: wrzuć pliki do ./assets i odśwież stronę (bez przebudowy)
+      - ./assets:/app/assets:ro
+      # Statystyki dnia i ciągi 0/1 odwiedzających (SQLite)
+      - kiosk-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  kiosk-data:
